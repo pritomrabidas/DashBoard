@@ -1,12 +1,22 @@
-import './App.css'
+import {
+  createBrowserRouter,
+  createRoutesFromElements,
+  Route,
+  RouterProvider,
+} from "react-router-dom";
+import "./App.css";
+import Layout from "./Layout";
 
 function App() {
-
-  return (
-    <div className='font-Raleway text-secandari'>
-      hello mr
-    </div>
-  )
+  const router = createBrowserRouter(
+    createRoutesFromElements(
+      <Route>
+        <Route path="/" element={<Layout />}>
+        </Route>
+      </Route>
+    )
+  );
+  return <RouterProvider router={router} />;
 }
 
-export default App
+export default App;
