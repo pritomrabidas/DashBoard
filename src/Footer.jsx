@@ -1,6 +1,6 @@
 const Footer = () => {
   return (
-    <footer className="pt-20 left-[8%] absolute overflow-hidden">
+    <footer className="pt-20 bottom-0 left-[8%] absolute overflow-hidden h-screen items-end">
       <div className="justify-between flex px-5 ">
         <h3 className="text-sm text-primary font-Popins font-normal">
           All Rights Reserved by Creative IT Institute.
