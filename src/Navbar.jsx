@@ -193,7 +193,7 @@ const Navbar = () => {
       </nav>
       {side && (
         <div onClick={()=>setSide(false)} className="fixed left-0 top-0 z-50 w-screen h-screen pt-[75px]">
-          <div className="fixed shadow-md z-30 h-full w-[10%] left-0  pb-24 overflow-x-hidden overflow-y-scroll bg-white">
+          <div className="fixed shadow-xs z-30 h-full w-[10%] left-0  pb-24 overflow-x-hidden overflow-y-scroll bg-white">
             <Link
               to="/"
               className="duration-200 text-primary hover:text-secandari"
@@ -204,7 +204,7 @@ const Navbar = () => {
               </p>
             </Link>
             <Link
-              to="/"
+              to="/batch"
               className="duration-200 text-primary hover:text-secandari"
             >
               <PiHandbagThin className="xl:text-4xl md:text-3xl text-center mx-auto mt-6" />

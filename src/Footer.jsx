@@ -1,8 +1,8 @@
 const Footer = () => {
   return (
-    <footer className="pt-20 bottom-0 left-[8%] absolute overflow-hidden h-screen items-end">
-      <div className="justify-between flex px-5 ">
-        <h3 className="text-sm text-primary font-Popins font-normal">
+    <footer className="py-10  items-end">
+      <div className=" container mx-auto justify-between flex px-10  pt-5 border-t border-brand">
+        <h3 className="text-sm text-primary font-Popins font-normal ">
           All Rights Reserved by Creative IT Institute.
         </h3>
         <h3 className="text-sm text-secandari font-Popins font-normal">
