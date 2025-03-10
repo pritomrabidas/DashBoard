@@ -17,7 +17,7 @@ const RightBoard = () => {
       </ul>
 
       {/* Course & Payment Status */}
-      <div className=" p-6 mt-4 rounded-lg">
+      <div className=" sm:p-6 p-2 mt-4 rounded-lg">
         <h1 className="text-xl text-primary font-Nunito-font font-bold">
           Course & Payment Status
         </h1>
@@ -25,7 +25,7 @@ const RightBoard = () => {
           <tbody>
             {courseInfo.map((item, index) => (
               <tr key={index} className="">
-                <td className="px-4 py-2 font-medium text-primary text-base font-Opensans">
+                <td className="px-4 py-2 font-medium text-primary sm:text-base text-sm font-Opensans">
                   {item.label}
                 </td>
                 <td className="px-4 py-2 font-medium text-primary text-sm font-Opensans">
@@ -59,7 +59,7 @@ const RightBoard = () => {
         </div>
 
         {/* Payment Info */}
-        <div className="grid grid-cols-2 sm:grid-cols-3 gap-2 mt-6 text-center">
+        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-2 xl:grid-cols-3 gap-2 mt-6 text-center">
           {[
             ["Tuition Fee", "60000/-"],
             ["Additional Fee", "2000/-"],
@@ -69,8 +69,12 @@ const RightBoard = () => {
             ["Payable Amount", "35000/-"],
           ].map(([label, amount]) => (
             <div key={label} className="bg-secandari scale-95 p-4 rounded-lg">
-              <p className="text-sm text-primary font-Monrope font-medium ">{label}</p>
-              <h1 className="text-lg font-semibold text-primary font-Monrope">{amount}</h1>
+              <p className="text-sm text-primary font-Monrope font-medium ">
+                {label}
+              </p>
+              <h1 className="text-lg font-semibold text-primary font-Monrope">
+                {amount}
+              </h1>
             </div>
           ))}
         </div>
@@ -84,9 +88,11 @@ const RightBoard = () => {
       </div>
 
       {/* Student Status Report */}
-      <div className="bg-gray-100 p-6 mt-6 rounded-lg">
-        <h1 className="text-xl font-bold mb-4">Student Status</h1>
-        <div className="grid grid-cols-2 sm:grid-cols-3 gap-4">
+      <div className=" p-6 mt-6 rounded-lg">
+        <h1 className="text-xl font-Nunito-font text-primary font-bold mb-4">
+          Student Status
+        </h1>
+        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-2 xl:grid-cols-3 gap-4">
           {[
             ["Module Class", "64/64"],
             ["Extra Class", "0"],
@@ -97,10 +103,14 @@ const RightBoard = () => {
           ].map(([label, value]) => (
             <div
               key={label}
-              className="bg-white p-4 rounded-lg text-center shadow"
+              className="bg-secandari p-4 rounded-lg text-center shadow"
             >
-              <p>{label}</p>
-              <h2 className="text-xl font-bold">{value}</h2>
+              <p className="text-sm text-primary font-Monrope font-medium ">
+                {label}
+              </p>
+              <h2 className="text-lg font-semibold text-primary font-Monrope">
+                {value}
+              </h2>
             </div>
           ))}
         </div>
@@ -114,10 +124,12 @@ const RightBoard = () => {
             ["Total Home Work Submit", 77],
           ].map(([label, percentage]) => (
             <div key={label}>
-              <p className="mb-2">{label}</p>
-              <div className="w-full bg-gray-300 rounded-full h-3">
+              <p className="mb-2 text-primary text-sm font-Opensans font-medium">
+                {label}
+              </p>
+              <div className="w-full bg-gray-200 rounded-full h-3">
                 <div
-                  className="h-3 bg-gradient-to-r from-red-500 to-orange-400 rounded-full"
+                  className="h-3 bg-gradient-to-r from-secandari to-orange-400 rounded-full"
                   style={{ width: `${percentage}%` }}
                 ></div>
               </div>

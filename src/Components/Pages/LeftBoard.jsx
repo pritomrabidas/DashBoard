@@ -2,10 +2,10 @@ import { Link } from "react-router-dom";
 
 const LeftBoard = () => {
   return (
-    <div className="w-[60%] p-5 mb-9">
+    <div className="lg:w-[60%] w-full p-5 mb-9">
       {/* Profile Section */}
-      <div className="flex flex-col items-center md:flex-row  bg-secandari shadow px-10 pt-16 rounded-t-lg">
-        <div className="relative w-48 h-48">
+      <div className="flex flex-col items-center md:flex-row  bg-secandari shadow px-10 py-10 md:pt-16 rounded-t-lg">
+        <div className="relative w-48 h-48 ">
           <button className="absolute top-1 right-1 bg-secandari text-white p-2 rounded-full cursor-pointer">
             ✏
           </button>
@@ -15,7 +15,7 @@ const LeftBoard = () => {
             className="w-full h-full rounded-t-md"
           />
         </div>
-        <div className="ml-7 ">
+        <div className="md:ml-7 sm:ml-0 pt-2 md:pt-0">
           <h1 className="text-2xl font-Nunito-font font-normal text-[#edececfd]">
             Pritom Rabidas
           </h1>
@@ -41,7 +41,7 @@ const LeftBoard = () => {
         <h2 className="text-xl font-medium text-primary font-Monrope mb-3">
           Personal Details
         </h2>
-        <table className="w-[60%] border-collapse text-sm font-normal text-primary font-Monrope">
+        <table className="w-[60%] border-collapse sm:text-sm text-xs font-normal text-primary font-Monrope">
           <tbody>
             {[
               ["Father's Name", "Ganesh Rabidas"],
@@ -83,19 +83,15 @@ const LeftBoard = () => {
         </div>
       </div>
       <div className="text-center bg-white shadow-sm p-6 rounded-lg mt-4">
-        <h2 className="text-2xl font-semibold font-Opensans text-secandari">
+        <h2 className="sm:text-2xl text-lg font-semibold font-Opensans text-secandari">
           Frontend Development With React <br />
           PRE-ASSESSMENT RESULT
         </h2>
 
-        <span className="text-red-500 text-4xl mt-2">
-          <i className="fas fa-sad-tear"></i>
-        </span>
-
-        <h4 className="text-lg text-primary font-Popins font-medium mt-3">
+        <h4 className="sm:text-lg text-base text-primary font-Popins font-medium mt-3">
           You’ve Achieved
         </h4>
-        <h3 className="text-2xl font-Nunito-font font-bold text-red-600">
+        <h3 className="sm:text-2xl text-xl font-Nunito-font font-bold text-red-600">
           Grade D
         </h3>
 
@@ -110,7 +106,7 @@ const LeftBoard = () => {
             to=""
             target="_blank"
             rel="noopener noreferrer"
-            className="btn px-4 py-2 bg-secandari text-white rounded-md hover:bg-green-700 duration-200 transition text-xs font-medium font-Monrope"
+            className="btn mt-1 px-4 py-2 bg-secandari text-white rounded-md hover:bg-green-700 duration-200 transition text-xs font-medium font-Monrope"
           >
             Go To Course
           </Link>

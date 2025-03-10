@@ -20,13 +20,17 @@ const Navbar = () => {
   const [prifile, setProfile] = useState(false);
   const [notification, setNotification] = useState(false);
   const [board, setBoard] = useState(false);
+  const [side, setSide] = useState(false);
   return (
     <div className="">
       <nav className="fixed z-40 w-full top-0 bg-white shadow flex justify-between items-center px-4 py-5">
         <div className="container mx-auto flex justify-between">
           <div className="flex items-center space-x-4">
-            <FiAlignLeft className="cursor-pointer text-lg text-[#35353697] hover:text-secandari" />
-            <div className="pl-10">
+            <FiAlignLeft
+              onClick={() => setSide(true)}
+              className="cursor-pointer text-lg text-primary duration-200 hover:text-secandari"
+            />
+            <div className="pl-5 sm:block hidden">
               <input
                 type="text"
                 placeholder="Search..."
@@ -35,7 +39,7 @@ const Navbar = () => {
             </div>
           </div>
           {/* Logo */}
-          <h3 className="text-secandari font-Montez text-2xl font-bold">
+          <h3 className="text-secandari font-Montez lg:text-2xl md:text-xl text-lg font-bold">
             PRITOM
           </h3>
 
@@ -187,50 +191,75 @@ const Navbar = () => {
           </div>
         </div>
       </nav>
-      <nav className="fixed shadow-md z-30 h-full w-[8%] left-0 mt-20 pb-24 overflow-x-hidden overflow-y-scroll">
-        <Link to="/" className="duration-200 text-primary hover:text-secandari">
-          <MdOutlineSpaceDashboard className="text-4xl text-center mx-auto mt-6" />
-          <p className="text-center border-b pb-3 border-brand  text-sm   font-normal font-Nunito-font ">
-            Dashboard
-          </p>
-        </Link>
-        <Link to="/" className="duration-200 text-primary hover:text-secandari">
-          <PiHandbagThin className="text-4xl text-center mx-auto mt-6" />
-          <p className="text-center border-b pb-3 border-brand  text-sm   font-normal font-Nunito-font ">
-            Batch
-          </p>
-        </Link>
-        <Link to="/" className="duration-200 text-primary hover:text-secandari">
-          <BsDatabase className="text-4xl text-center mx-auto mt-6" />
-          <p className="text-center border-b pb-3 border-brand  text-sm   font-normal font-Nunito-font ">
-            Account
-          </p>
-        </Link>
-        <Link to="/" className="duration-200 text-primary hover:text-secandari">
-          <HiOutlineAcademicCap className="text-4xl text-center mx-auto mt-6" />
-          <p className="text-center border-b pb-3 border-brand  text-sm   font-normal font-Nunito-font ">
-            Acedemic
-          </p>
-        </Link>
-        <Link to="/" className="duration-200 text-primary hover:text-secandari">
-          <LiaUser className="text-4xl text-center mx-auto mt-6" />
-          <p className="text-center border-b pb-3 border-brand  text-sm   font-normal font-Nunito-font ">
-            Profile
-          </p>
-        </Link>
-        <Link to="/" className="duration-200 text-primary hover:text-secandari">
-          <RxTimer className="text-4xl text-center mx-auto mt-6" />
-          <p className="text-center border-b pb-3 border-brand  text-sm   font-normal font-Nunito-font ">
-            Exams
-          </p>
-        </Link>
-        <Link to="/" className="duration-200 text-primary hover:text-secandari">
-          <PiPaperclipLight className="text-4xl text-center mx-auto mt-6" />
-          <p className="text-center   text-sm   font-normal font-Nunito-font ">
-            Project
-          </p>
-        </Link>
-      </nav>
+      {side && (
+        <div onClick={()=>setSide(false)} className="fixed left-0 top-0 z-50 w-screen h-screen pt-[75px]">
+          <div className="fixed shadow-md z-30 h-full w-[10%] left-0  pb-24 overflow-x-hidden overflow-y-scroll bg-white">
+            <Link
+              to="/"
+              className="duration-200 text-primary hover:text-secandari"
+            >
+              <MdOutlineSpaceDashboard className="xl:text-4xl md:text-3xl text-center mx-auto mt-6" />
+              <p className="text-center border-b pb-3 border-brand  xl:text-sm lg:text-xs md:text-sm  font-normal font-Nunito-font ">
+                Dashboard
+              </p>
+            </Link>
+            <Link
+              to="/"
+              className="duration-200 text-primary hover:text-secandari"
+            >
+              <PiHandbagThin className="xl:text-4xl md:text-3xl text-center mx-auto mt-6" />
+              <p className="text-center border-b pb-3 border-brand xl:text-sm lg:text-xs md:text-sm font-normal font-Nunito-font ">
+                Batch
+              </p>
+            </Link>
+            <Link
+              to="/"
+              className="duration-200 text-primary hover:text-secandari"
+            >
+              <BsDatabase className="xl:text-4xl md:text-3xl text-center mx-auto mt-6" />
+              <p className="text-center border-b pb-3 border-brand xl:text-sm lg:text-xs md:text-sm font-normal font-Nunito-font ">
+                Account
+              </p>
+            </Link>
+            <Link
+              to="/"
+              className="duration-200 text-primary hover:text-secandari"
+            >
+              <HiOutlineAcademicCap className="xl:text-4xl md:text-3xl text-center mx-auto mt-6" />
+              <p className="text-center border-b pb-3 border-brand xl:text-sm lg:text-xs md:text-sm font-normal font-Nunito-font ">
+                Acedemic
+              </p>
+            </Link>
+            <Link
+              to="/"
+              className="duration-200 text-primary hover:text-secandari"
+            >
+              <LiaUser className="xl:text-4xl md:text-3xl text-center mx-auto mt-6" />
+              <p className="text-center border-b pb-3 border-brand xl:text-sm lg:text-xs md:text-sm font-normal font-Nunito-font ">
+                Profile
+              </p>
+            </Link>
+            <Link
+              to="/"
+              className="duration-200 text-primary hover:text-secandari"
+            >
+              <RxTimer className="xl:text-4xl md:text-3xl text-center mx-auto mt-6" />
+              <p className="text-center border-b pb-3 border-brand xl:text-sm lg:text-xs md:text-sm font-normal font-Nunito-font ">
+                Exams
+              </p>
+            </Link>
+            <Link
+              to="/"
+              className="duration-200 text-primary hover:text-secandari"
+            >
+              <PiPaperclipLight className="xl:text-4xl md:text-3xl text-center mx-auto mt-6" />
+              <p className="text-center  xl:text-sm lg:text-xs md:text-sm font-normal font-Nunito-font ">
+                Project
+              </p>
+            </Link>
+          </div>
+        </div>
+      )}
     </div>
   );
 };

@@ -3,12 +3,12 @@ import RightBoard from "./Pages/RightBoard";
 
 const Dashboard = () => {
   return (
-    <section className="pt-20 left-[8%] absolute bg-[#f9fafb78] right-0 px-5">
+    <section className="pt-20 sm:px-5">
       <div className="container mx-auto px-2">
         <h1 className=" py-5 border-b border-brand text-2xl font-medium font-Nunito-font">
           Dashboard
         </h1>
-        <div className="flex w-full">
+        <div className="flex flex-col lg:flex-row w-full">
           <LeftBoard />
           <RightBoard />
         </div>
