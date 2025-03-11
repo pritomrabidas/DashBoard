@@ -5,7 +5,7 @@ import StatCard from "./Pages/StatCard";
 const Batch = () => {
   return (
     <section className="pt-20 ">
-      <div className="container mx-auto sm:px-5 pt-5">
+      <div className="container mx-auto px-5 sm:px-16 md:px-5 pt-5">
         <div>
           <h1 className="text-2xl font-Nunito-font text-primary font-bold mb-4">
             Batch & Report
@@ -29,8 +29,7 @@ const Batch = () => {
             U FDR 2302
           </button>
         </div>
-
-        <div className="grid md:grid-cols-3 gap-6 pt-7">
+        <div className="grid lg:grid-cols-3 md:grid-cols-2 gap-6 pt-7">
           <div className="bg-white shadow p-6 rounded-lg">
             <h5 className="font-semibold font-Nunito-font text-lg text-primary mb-4 border-b border-brand pb-5">
               My Service

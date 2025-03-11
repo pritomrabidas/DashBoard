@@ -39,9 +39,12 @@ const Navbar = () => {
             </div>
           </div>
           {/* Logo */}
-          <h3 className="text-secandari font-Montez lg:text-2xl md:text-xl text-lg font-bold">
+          <Link
+            to="/"
+            className="text-secandari font-Montez lg:text-2xl md:text-xl text-lg font-bold cursor-pointer sm:block hidden"
+          >
             PRITOM
-          </h3>
+          </Link>
 
           {/* Right Section */}
           <div className="flex items-center space-x-4">
@@ -134,7 +137,7 @@ const Navbar = () => {
                 onClick={() => setProfile(true)}
                 className="flex items-center space-x-2 cursor-pointer"
               >
-                <span className="text-primary text-sm font-normal font-Nunito-font pr-2  hover:text-secandari">
+                <span className="text-primary text-sm font-normal font-Nunito-font pr-2  hover:text-secandari sm:block hidden">
                   Pritom Rabidas
                 </span>
                 <img
@@ -192,7 +195,10 @@ const Navbar = () => {
         </div>
       </nav>
       {side && (
-        <div onClick={()=>setSide(false)} className="fixed left-0 top-0 z-50 w-screen h-screen pt-[75px]">
+        <div
+          onClick={() => setSide(false)}
+          className="fixed left-0 top-0 z-50 w-screen h-screen pt-[75px]"
+        >
           <div className="fixed shadow-xs z-30 h-full w-[10%] left-0  pb-24 overflow-x-hidden overflow-y-scroll bg-white">
             <Link
               to="/"
@@ -213,7 +219,7 @@ const Navbar = () => {
               </p>
             </Link>
             <Link
-              to="/"
+              to="/account"
               className="duration-200 text-primary hover:text-secandari"
             >
               <BsDatabase className="xl:text-4xl md:text-3xl text-center mx-auto mt-6" />
