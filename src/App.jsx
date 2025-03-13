@@ -10,6 +10,8 @@ import Dashboard from "./Components/Dashboard";
 import Batch from "./Components/Batch";
 import Account from "./Components/Account";
 import Profile from "./Components/Profile";
+import Exam from "./Components/Exam";
+import Project from "./Components/Project";
 
 function App() {
   const router = createBrowserRouter(
@@ -20,6 +22,8 @@ function App() {
           <Route path="/batch" element={<Batch />}></Route>
           <Route path="/account" element={<Account />}></Route>
           <Route path="/profile" element={<Profile />}></Route>
+          <Route path="/exam" element={<Exam />}></Route>
+          <Route path="/project" element={<Project />}></Route>
         </Route>
       </Route>
     )

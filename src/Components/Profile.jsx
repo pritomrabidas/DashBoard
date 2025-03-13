@@ -7,7 +7,7 @@ const Profile = () => {
       <div className="container mx-auto px-4 pt-5">
         <div className="pb-5">
           <h1 className="text-2xl font-Nunito-font text-primary font-bold mb-4">
-            Batch & Report
+            Profile
           </h1>
           <ul className="flex space-x-2 text-gray-500 items-center pb-2">
             <li>
@@ -19,7 +19,7 @@ const Profile = () => {
               </Link>
             </li>
             <li className="text-sm font-normal font-Popins text-primary">
-              / Batch
+              / Profile
             </li>
           </ul>
         </div>
