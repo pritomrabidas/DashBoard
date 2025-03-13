@@ -9,9 +9,9 @@ const DashboardStats = () => {
         <AccountStatCard title="Total Paid" value="44000/-" />
         <AccountStatCard title="Total Due" value="0/-" />
       </div>
-      <div className="bg-white shadow-md rounded-lg p-4 mt-4">
+      <div className="bg-white text-primary text-base font-Nunito-font font-medium shadow-base rounded-lg p-4 mt-4">
         <h5 className="font-semibold">Account Notice</h5>
-        <h5>No Notice Found</h5>
+        <h5 className="pt-5">No Notice Found</h5>
       </div>
     </div>
   );

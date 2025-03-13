@@ -228,16 +228,7 @@ const Navbar = () => {
               </p>
             </Link>
             <Link
-              to="/"
-              className="duration-200 text-primary hover:text-secandari"
-            >
-              <HiOutlineAcademicCap className="xl:text-4xl md:text-3xl text-center mx-auto mt-6" />
-              <p className="text-center border-b pb-3 border-brand xl:text-sm lg:text-xs md:text-sm font-normal font-Nunito-font ">
-                Acedemic
-              </p>
-            </Link>
-            <Link
-              to="/"
+              to="/profile"
               className="duration-200 text-primary hover:text-secandari"
             >
               <LiaUser className="xl:text-4xl md:text-3xl text-center mx-auto mt-6" />
@@ -246,7 +237,7 @@ const Navbar = () => {
               </p>
             </Link>
             <Link
-              to="/"
+              to="/exam"
               className="duration-200 text-primary hover:text-secandari"
             >
               <RxTimer className="xl:text-4xl md:text-3xl text-center mx-auto mt-6" />
@@ -255,7 +246,7 @@ const Navbar = () => {
               </p>
             </Link>
             <Link
-              to="/"
+              to="/project"
               className="duration-200 text-primary hover:text-secandari"
             >
               <PiPaperclipLight className="xl:text-4xl md:text-3xl text-center mx-auto mt-6" />
