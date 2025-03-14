@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import StudentCard from "./Pages/StudentCard";
+import ProfileLeft from "./Pages/ProfileLeft";
 
 const Profile = () => {
   return (
@@ -24,6 +25,9 @@ const Profile = () => {
           </ul>
         </div>
         <StudentCard />
+        <div className="">
+          <ProfileLeft/>
+        </div>
       </div>
     </section>
   );
