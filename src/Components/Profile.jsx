@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import StudentCard from "./Pages/StudentCard";
 import ProfileLeft from "./Pages/ProfileLeft";
+import ProfileRight from "./Pages/ProfileRight";
 
 const Profile = () => {
   return (
@@ -25,8 +26,15 @@ const Profile = () => {
           </ul>
         </div>
         <StudentCard />
-        <div className="">
-          <ProfileLeft/>
+        <div className="flex space-x-5">
+          <ProfileLeft />
+          <ProfileRight />
+        </div>
+        <div className="justify-end text-end pr-5 pt-6">
+          <button className="px-8 py-3 scale-95 rounded-2xl text-sm font-medium font-Monrope bg-secandari text-white duration-200 hover:bg-[#3a9a3afb] cursor-pointer">
+            {" "}
+            Update
+          </button>
         </div>
       </div>
     </section>

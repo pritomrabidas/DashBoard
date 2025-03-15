@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 
 const StudentCard = () => {
   return (
-    <div className="bg-white shadow-sm rounded-lg p-7 mb-5 relative flex flex-col md:flex-row items-center">
+    <div className="bg-white shadow-sm rounded-lg p-7 mb-5 relative flex flex-col md:flex-row items-center border border-gray-100">
       <div className="relative w-48 h-48 ">
         <button className="absolute top-1 right-1 bg-secandari text-white p-2 rounded-full cursor-pointer text-sm">
           ✏

@@ -1,4 +1,8 @@
 import Line3 from "../Profile/Line3";
+import LocationForm from "../Profile/LocationForm";
+import FormComponents from "../Profile/FormComponents";
+import AddressForm from "../Profile/AddressForm";
+import AddressForm2 from "../Profile/AddressForm2";
 
 const ProfileLeft = () => {
   return (
@@ -111,6 +115,14 @@ const ProfileLeft = () => {
           </div>
         </div>
         <Line3 />
+        <div className="flex">
+          <LocationForm />
+          <AddressForm />
+        </div>
+        <div className="flex">
+          <FormComponents />
+          <AddressForm2 />
+        </div>
       </div>
     </div>
   );

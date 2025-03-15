@@ -128,7 +128,7 @@ const Navbar = () => {
                   onClick={() => setNotification(false)}
                   className="fixed w-screen h-screen top-0 right-0 bg-[rgba(0,0,0,0)] z-50"
                 >
-                  <div className=" absolute right-[7%] top-14 mt-2 bg-white shadow-xs rounded-md w-48 py-2 border border-[#9b9fa5a0]"></div>
+                  <div className=" absolute right-[7%] top-14 mt-2 bg-white shadow-xs rounded-md w-48 h-40 py-2 border border-[#9b9fa5a0]"></div>
                 </div>
               )}
             </div>
