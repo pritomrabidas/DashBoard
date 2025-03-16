@@ -45,14 +45,14 @@ const LocationForm = () => {
   const [isUpazilaOpen, setIsUpazilaOpen] = useState(false);
 
   return (
-    <div className="grid grid-cols-2 space-x-6">
+    <div className="grid grid-cols-1 sm:grid-cols-2 space-x-6 space-y-2">
       {/* Country Status Dropdown */}
       <div className="relative pb-2">
         <label className="block text-sm font-Nunito-font font-medium text-gray-700 pb-1">
           Now Out Of Country?
         </label>
         <button
-          className="w-36 flex justify-between items-center p-2 border border-gray-300 rounded-md shadow-sm bg-white   focus:border-secandari outline-none text-xs text-primary font-Nunito-font font-normal duration-200"
+          className="xl:w-36 lg:w-32 md:w-36 sm:w-32 w-full flex justify-between items-center p-2 border border-gray-300 rounded-md shadow-sm bg-white   focus:border-secandari outline-none text-xs text-primary font-Nunito-font font-normal duration-200"
           onClick={() => setIsCountryStatusOpen(!isCountryStatusOpen)}
         >
           <span>{selectedCountryStatus}</span>
@@ -90,7 +90,7 @@ const LocationForm = () => {
           Present Division
         </label>
         <button
-          className="w-36 flex justify-between items-center p-2 border border-gray-300 rounded-md shadow-sm bg-white   focus:border-secandari outline-none text-xs text-primary font-Nunito-font font-normal duration-200"
+          className="xl:w-36 lg:w-32 md:w-36 sm:w-32 w-full flex justify-between items-center p-2 border border-gray-300 rounded-md shadow-sm bg-white   focus:border-secandari outline-none text-xs text-primary font-Nunito-font font-normal duration-200"
           onClick={() => setIsDivisionOpen(!isDivisionOpen)}
         >
           <span>{selectedDivision}</span>
@@ -128,7 +128,7 @@ const LocationForm = () => {
           Present District
         </label>
         <button
-          className="w-36 flex justify-between items-center p-2 border border-gray-300 rounded-md shadow-sm bg-white   focus:border-secandari outline-none text-xs text-primary font-Nunito-font font-normal duration-200"
+          className="xl:w-36 lg:w-32 md:w-36 sm:w-32 w-full flex justify-between items-center p-2 border border-gray-300 rounded-md shadow-sm bg-white   focus:border-secandari outline-none text-xs text-primary font-Nunito-font font-normal duration-200"
           onClick={() => setIsDistrictOpen(!isDistrictOpen)}
         >
           <span>{selectedDistrict}</span>
@@ -166,7 +166,7 @@ const LocationForm = () => {
           Present Upazila
         </label>
         <button
-          className="w-36 flex justify-between items-center p-2 border border-gray-300 rounded-md shadow-sm bg-white   focus:border-secandari outline-none text-xs text-primary font-Nunito-font font-normal duration-200"
+          className="xl:w-36 lg:w-32 md:w-36 sm:w-32 w-full flex justify-between items-center p-2 border border-gray-300 rounded-md shadow-sm bg-white   focus:border-secandari outline-none text-xs text-primary font-Nunito-font font-normal duration-200"
           onClick={() => setIsUpazilaOpen(!isUpazilaOpen)}
         >
           <span>{selectedUpazila}</span>

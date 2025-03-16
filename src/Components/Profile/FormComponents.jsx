@@ -39,7 +39,7 @@ const FormComponents = () => {
     const [permanentDistrict, setPermanentDistrict] = useState("Gazipur");
     const [permanentUpazila, setPermanentUpazila] = useState("Sreepur");
   return (
-    <div className="grid grid-cols-2 space-x-5">
+    <div className="grid grid-cols-1 sm:grid-cols-2 space-x-5 pt-2">
       {/* Nationality Input */}
       <div className="mb-4">
         <label className="block text-sm font-Nunito-font font-medium text-gray-700 pb-1">

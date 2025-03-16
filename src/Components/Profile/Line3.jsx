@@ -12,7 +12,7 @@ const Line3 = () => {
   const [isReligionOpen, setIsReligionOpen] = useState(false);
   const [isGenderOpen, setIsGenderOpen] = useState(false);
   return (
-    <div className="w-full flex flex-row space-x-5 space-y-0">
+    <div className="w-full flex flex-col sm:flex-row xl:space-x-5 lg:space-x-4 space-x-3 space-y-2">
       <div className="relative">
         <div className="mb-4">
           <label
@@ -25,7 +25,7 @@ const Line3 = () => {
             {/* Button */}
             <button
               type="button"
-              className="w-36 flex justify-between items-center p-2 border border-gray-300 rounded-md shadow-sm bg-white   focus:border-secandari outline-none text-xs text-primary font-Nunito-font font-normal duration-200"
+              className="xl:w-36 lg:w-32 md:w-36 sm:w-32 w-full flex justify-between items-center p-2 border border-gray-300 rounded-md shadow-sm bg-white   focus:border-secandari outline-none text-xs text-primary font-Nunito-font font-normal duration-200"
               onClick={() => setIsOpen(!isOpen)}
             >
               <span>{selectedBloodGroup}</span>
@@ -77,7 +77,7 @@ const Line3 = () => {
           id="dob"
           value={dateOfBirth}
           onChange={(e) => setDateOfBirth(e.target.value)}
-          className="w-36 flex justify-between items-center p-2 border border-gray-300 rounded-md shadow-sm bg-white   focus:border-secandari outline-none text-xs text-primary font-Nunito-font font-normal duration-200"
+          className="xl:w-36 lg:w-32 md:w-36 sm:w-32 w-full flex justify-between items-center p-2 border border-gray-300 rounded-md shadow-sm bg-white   focus:border-secandari outline-none text-xs text-primary font-Nunito-font font-normal duration-200"
         />
       </div>
       <div className="relative">
@@ -89,7 +89,7 @@ const Line3 = () => {
         </label>
         <button
           type="button"
-          className="w-36 flex justify-between items-center p-2 border border-gray-300 rounded-md shadow-sm bg-white   focus:border-secandari outline-none text-xs text-primary font-Nunito-font font-normal duration-200"
+          className="xl:w-36 lg:w-32 md:w-36 sm:w-32 w-full flex justify-between items-center p-2 border border-gray-300 rounded-md shadow-sm bg-white   focus:border-secandari outline-none text-xs text-primary font-Nunito-font font-normal duration-200"
           onClick={() => setIsReligionOpen(!isReligionOpen)}
         >
           <span>{selectedReligion}</span>
@@ -134,7 +134,7 @@ const Line3 = () => {
         </label>
         <button
           type="button"
-          className="w-32 flex justify-between items-center p-2 border border-gray-300 rounded-md shadow-sm bg-white   focus:border-secandari outline-none text-xs text-primary font-Nunito-font font-normal duration-200"
+          className="xl:w-36 lg:w-32 md:w-36 sm:w-32 w-full flex justify-between items-center p-2 border border-gray-300 rounded-md shadow-sm bg-white   focus:border-secandari outline-none text-xs text-primary font-Nunito-font font-normal duration-200"
           onClick={() => setIsGenderOpen(!isGenderOpen)}
         >
           <span>{selectedGender}</span>

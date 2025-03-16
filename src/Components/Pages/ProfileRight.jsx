@@ -21,7 +21,7 @@ const ProfileRight = () => {
     setFormData((prev) => ({ ...prev, [name]: value }));
   };
   return (
-    <div className="w-[60%] pt-20">
+    <div className="lg:w-[40%] w-full pt-0 lg:pt-20">
       <div className="p-6 bg-gray-50 shadow-sm rounded-lg">
         <form className="space-y-4">
           <div>
@@ -94,7 +94,7 @@ const ProfileRight = () => {
             </select>
           </div>
 
-          <div className="grid grid-cols-2 gap-4">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             <div>
               <label className="block text-sm font-Nunito-font font-medium text-gray-700 pb-1">
                 Tribal / Indigenous Community?
@@ -125,7 +125,7 @@ const ProfileRight = () => {
             </div>
           </div>
 
-          <div className="grid grid-cols-2 gap-4">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             <div>
               <label className="block text-sm font-Nunito-font font-medium text-gray-700 pb-1">
                 Select Last Education Degree
@@ -177,7 +177,7 @@ const ProfileRight = () => {
             />
           </div>
 
-          <div className="grid grid-cols-3 gap-4">
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
             <div>
               <label className="block text-sm font-Nunito-font font-medium text-gray-700 pb-1">
                 Group Name

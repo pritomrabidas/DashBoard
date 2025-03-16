@@ -7,7 +7,7 @@ const Dropdown = ({ label, options, selected, onChange }) => {
         {label}
       </label>
       <select
-        className="w-36 flex justify-between items-center p-2 border border-gray-300 rounded-md shadow-sm bg-white   focus:border-secandari outline-none text-xs text-primary font-Nunito-font font-normal duration-200"
+        className="xl:w-36 lg:w-32 md:w-36 sm:w-32 w-full flex justify-between items-center p-2 border border-gray-300 rounded-md shadow-sm bg-white   focus:border-secandari outline-none text-xs text-primary font-Nunito-font font-normal duration-200"
         value={selected}
         onChange={(e) => onChange(e.target.value)}
       >

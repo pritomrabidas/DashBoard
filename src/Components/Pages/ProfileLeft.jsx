@@ -6,9 +6,9 @@ import AddressForm2 from "../Profile/AddressForm2";
 
 const ProfileLeft = () => {
   return (
-    <div className="w-[60%] py-20">
+    <div className="lg:w-[60%] w-full py-20">
       <div className="shadow bg-gray-50 p-6 rounded-md w-full">
-        <div className="w-full flex flex-row space-x-6 space-y-0">
+        <div className="w-full flex flex-col sm:flex-row xl:space-x-6 space-x-3  space-y-2">
           <div className="mb-4">
             <label
               htmlFor="father_name"
@@ -23,7 +23,7 @@ const ProfileLeft = () => {
               autoComplete="off"
               spellCheck="false"
               placeholder="Enter Student Father's name"
-              className="w-48 p-2 border border-gray-300 rounded-md shadow-sm focus:border-secandari outline-none text-xs text-primary font-Nunito-font font-normal duration-200"
+              className="xl:w-48 lg:w-44 md:w-48 sm:w-44 w-full p-2 border border-gray-300 rounded-md shadow-sm focus:border-secandari outline-none text-xs text-primary font-Nunito-font font-normal duration-200"
             />
           </div>
           <div className="mb-4">
@@ -40,7 +40,7 @@ const ProfileLeft = () => {
               autoComplete="off"
               spellCheck="false"
               placeholder="Enter Student Father's name"
-              className="w-48 p-2 border border-gray-300 rounded-md shadow-sm focus:border-secandari outline-none text-xs text-primary font-Nunito-font font-normal duration-200"
+              className="xl:w-48 lg:w-44 md:w-48 sm:w-44 w-full p-2 border border-gray-300 rounded-md shadow-sm focus:border-secandari outline-none text-xs text-primary font-Nunito-font font-normal duration-200"
             />
           </div>
           <div className="mb-4">
@@ -57,11 +57,11 @@ const ProfileLeft = () => {
               autoComplete="off"
               spellCheck="false"
               placeholder="Enter Student Guardian's Phone"
-              className="w-48 p-2 border border-gray-300 rounded-md shadow-sm focus:border-secandari outline-none text-xs text-primary font-Nunito-font font-normal duration-200"
+              className="xl:w-48 lg:w-44 md:w-48 sm:w-44 w-full p-2 border border-gray-300 rounded-md shadow-sm focus:border-secandari outline-none text-xs text-primary font-Nunito-font font-normal duration-200"
             />
           </div>
         </div>
-        <div className="w-full flex flex-row space-x-6 space-y-0">
+        <div className="w-full flex flex-col sm:flex-row xl:space-x-6 space-x-2 space-y-2">
           <div className="mb-4">
             <label
               htmlFor="Student Alternative Number"
@@ -76,7 +76,7 @@ const ProfileLeft = () => {
               autoComplete="off"
               spellCheck="false"
               placeholder="Enter Student Alternative Number"
-              className="w-48 p-2 border border-gray-300 rounded-md shadow-sm focus:border-secandari outline-none text-xs text-primary font-Nunito-font font-normal duration-200"
+              className="xl:w-48 lg:w-44 md:w-48 sm:w-44 w-full p-2 border border-gray-300 rounded-md shadow-sm focus:border-secandari outline-none text-xs text-primary font-Nunito-font font-normal duration-200"
             />
           </div>
           <div className="mb-4">
@@ -93,7 +93,7 @@ const ProfileLeft = () => {
               autoComplete="off"
               spellCheck="false"
               placeholder="Enter National ID No."
-              className="w-48 p-2 border border-gray-300 rounded-md shadow-sm focus:border-secandari outline-none text-xs text-primary font-Nunito-font font-normal duration-200"
+              className="xl:w-48 lg:w-44 md:w-48 sm:w-44 w-full p-2 border border-gray-300 rounded-md shadow-sm focus:border-secandari outline-none text-xs text-primary font-Nunito-font font-normal duration-200"
             />
           </div>
           <div className="mb-4">
@@ -110,16 +110,16 @@ const ProfileLeft = () => {
               autoComplete="off"
               spellCheck="false"
               placeholder="Birth Reg ID No."
-              className="w-48 p-2 border border-gray-300 rounded-md shadow-sm focus:border-secandari outline-none text-xs text-primary font-Nunito-font font-normal duration-200"
+              className="xl:w-48 lg:w-44 md:w-48 sm:w-44 w-full p-2 border border-gray-300 rounded-md shadow-sm focus:border-secandari outline-none text-xs text-primary font-Nunito-font font-normal duration-200"
             />
           </div>
         </div>
         <Line3 />
-        <div className="flex">
+        <div className="flex sm:flex-row flex-col">
           <LocationForm />
           <AddressForm />
         </div>
-        <div className="flex">
+        <div className="flex sm:flex-row flex-col">
           <FormComponents />
           <AddressForm2 />
         </div>

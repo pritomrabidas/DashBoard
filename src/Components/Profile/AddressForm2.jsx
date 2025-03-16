@@ -3,7 +3,7 @@ import React, { useState } from 'react'
 const AddressForm2 = () => {
     const [permanentAddress, setPermanentAddress] = useState("");
   return (
-    <div className="w-1/2">
+    <div className="sm:w-1/2 w-full pt-2">
       {/* Permanent Address Textarea */}
       <div className="mb-4">
         <label className="block text-sm font-Nunito-font font-medium text-gray-700 pb-1">

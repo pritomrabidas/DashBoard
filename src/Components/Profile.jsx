@@ -26,7 +26,7 @@ const Profile = () => {
           </ul>
         </div>
         <StudentCard />
-        <div className="flex space-x-5">
+        <div className="flex flex-col lg:flex-row space-x-5">
           <ProfileLeft />
           <ProfileRight />
         </div>
