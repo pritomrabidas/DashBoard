@@ -12,6 +12,10 @@ import Account from "./Components/Account";
 import Profile from "./Components/Profile";
 import Exam from "./Components/Exam";
 import Project from "./Components/Project";
+import Register from "./Auth/Register";
+import Login from "./Auth/Login";
+import ForgotPassword from "./Auth/ForgotPassword";
+import OtpVerification from "./Auth/OtpVerification";
 
 function App() {
   const router = createBrowserRouter(
@@ -25,6 +29,10 @@ function App() {
           <Route path="/exam" element={<Exam />}></Route>
           <Route path="/project" element={<Project />}></Route>
         </Route>
+        <Route path="/registration" element={<Register />}> </Route>
+        <Route path="/login" element={<Login />}> </Route>
+        <Route path="/forgot-password" element={<ForgotPassword/>}> </Route>
+        <Route path="/otp-verification" element={<OtpVerification/>}> </Route>
       </Route>
     )
   );
