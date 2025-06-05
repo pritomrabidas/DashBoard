@@ -18,9 +18,9 @@ const Login = () => {
   };
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gradient-to-r from-blue-100 via-purple-100 to-pink-100 p-4">
-      <div className="w-full max-w-md bg-white p-8 rounded-2xl shadow-2xl animate-fade-in">
-        <h2 className="text-3xl font-bold font-Nunito-font text-center text-gray-800 mb-6">
+    <div className="min-h-screen flex items-center justify-center bg-gradient-to-r from-blue-100 via-purple-100 to-pink-100 px-4 sm:px-6 lg:px-8 py-10">
+      <div className="w-full max-w-md bg-white p-6 sm:p-8 rounded-2xl shadow-2xl animate-fade-in">
+        <h2 className="text-2xl sm:text-3xl font-bold font-Nunito-font text-center text-gray-800 mb-6">
           Welcome Back
         </h2>
         <form onSubmit={handleSubmit} className="space-y-5">
@@ -34,7 +34,7 @@ const Login = () => {
               value={formData.email}
               onChange={handleChange}
               required
-              className="w-full px-4 py-2 border border-gray-300 rounded-lg outline-none  transition-all text-sm text-primary font-Opensans font-normal"
+              className="w-full px-4 py-2 border border-gray-300 rounded-lg outline-none transition-all text-sm text-primary font-Opensans font-normal"
               placeholder="you@example.com"
             />
           </div>
@@ -48,7 +48,7 @@ const Login = () => {
               value={formData.password}
               onChange={handleChange}
               required
-              className="w-full px-4 py-2 border border-gray-300 rounded-lg outline-none  transition-all text-sm text-primary font-Opensans font-normal"
+              className="w-full px-4 py-2 border border-gray-300 rounded-lg outline-none transition-all text-sm text-primary font-Opensans font-normal"
               placeholder="••••••••"
             />
           </div>

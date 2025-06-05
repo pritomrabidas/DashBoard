@@ -13,7 +13,7 @@ const ForgotPassword = () => {
   return (
     <div className="min-h-screen flex items-center justify-center bg-gradient-to-r from-pink-100 via-purple-100 to-blue-100 p-4">
       <div className="w-full max-w-md bg-white p-8 rounded-2xl shadow-2xl animate-fade-in">
-        <h2 className="text-2xl font-bold text-center text-gray-800 mb-4 font-Nunito-font">
+        <h2 className="text-2xl sm:text-3xl font-bold text-center text-gray-800 mb-4 font-Nunito-font">
           Forgot Your Password?
         </h2>
         <p

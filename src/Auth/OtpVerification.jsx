@@ -15,7 +15,7 @@ const OtpVerification = () => {
     e.preventDefault();
     // Add OTP verification logic here
     if (otp.length !== 6) {
-      alert("Please enter a valid 6-digit OTP code.");
+      alert("Please enter a valid 4-digit OTP code.");
       return;
     }
     console.log("OTP submitted:", otp);
@@ -30,7 +30,7 @@ const OtpVerification = () => {
   return (
     <div className="min-h-screen flex items-center justify-center bg-gradient-to-r from-blue-100 via-purple-100 to-pink-100 p-4">
       <div className="w-full max-w-md bg-white p-8 rounded-2xl shadow-2xl animate-fade-in">
-        <h2 className="text-2xl font-bold text-center text-gray-800 mb-4 font-Nunito-font">
+        <h2 className="text-2xl sm:text-3xl font-bold text-center text-gray-800 mb-4 font-Nunito-font">
           Verify OTP
         </h2>
         <p

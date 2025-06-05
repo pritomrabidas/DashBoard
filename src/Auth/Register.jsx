@@ -21,11 +21,14 @@ const Register = () => {
       alert("Passwords do not match.");
       return;
     }
+
+    // submit logic here
   };
+
   return (
-    <div className="flex items-center justify-center min-h-screen bg-gradient-to-l from-blue-100 via-purple-100 to-pink-100 py-10">
-      <div className="w-full max-w-md p-8 bg-white rounded-2xl shadow-lg">
-        <h2 className="text-2xl font-bold font-Nunito-font mb-6 text-center text-gray-800">
+    <div className="flex items-center justify-center min-h-screen bg-gradient-to-l from-blue-100 via-purple-100 to-pink-100 py-10 px-4 sm:px-6 lg:px-8">
+      <div className="w-full max-w-md p-6 sm:p-8 bg-white rounded-2xl shadow-lg">
+        <h2 className="text-2xl sm:text-3xl font-bold font-Nunito-font mb-6 text-center text-gray-800">
           Create an Account
         </h2>
         <form onSubmit={handleSubmit} className="space-y-3">
@@ -39,7 +42,7 @@ const Register = () => {
               value={formData.name}
               onChange={handleChange}
               required
-              className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all"
+              className="w-full px-4 py-2 border border-gray-300 rounded-lg outline-none transition-all text-sm text-primary font-Opensans font-normal"
             />
           </div>
           <div>
@@ -50,7 +53,7 @@ const Register = () => {
               value={formData.email}
               onChange={handleChange}
               required
-              className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all"
+              className="w-full px-4 py-2 border border-gray-300 rounded-lg outline-none transition-all text-sm text-primary font-Opensans font-normal"
             />
           </div>
           <div>
@@ -61,7 +64,7 @@ const Register = () => {
               value={formData.number}
               onChange={handleChange}
               required
-              className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all"
+              className="w-full px-4 py-2 border border-gray-300 rounded-lg outline-none transition-all text-sm text-primary font-Opensans font-normal"
             />
           </div>
           <div>
@@ -73,7 +76,7 @@ const Register = () => {
               value={formData.password}
               onChange={handleChange}
               required
-              className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all"
+              className="w-full px-4 py-2 border border-gray-300 rounded-lg outline-none transition-all text-sm text-primary font-Opensans font-normal"
             />
           </div>
           <div>
@@ -85,7 +88,7 @@ const Register = () => {
               value={formData.confirmPassword}
               onChange={handleChange}
               required
-              className="w-full px-4 py-2 border border-gray-300 rounded-lg outline-none  transition-all text-sm text-primary font-Opensans font-normal"
+              className="w-full px-4 py-2 border border-gray-300 rounded-lg outline-none transition-all text-sm text-primary font-Opensans font-normal"
             />
           </div>
           <button
